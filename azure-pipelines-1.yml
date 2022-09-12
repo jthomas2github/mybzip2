@@ -14,5 +14,6 @@ steps:
 
 - script: |
     echo %CD%
-    c:\LDRA_Toolsuite_C_CPP_10.0.3\contestbed
+    c:\LDRA_Toolsuite_C_CPP_10.0.3\contestbed blocksort.c /11234q
+    echo blah > ..\TestResults\something.txt
   displayName: 'Run a multi-line script'
