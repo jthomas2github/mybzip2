@@ -13,6 +13,5 @@ steps:
   displayName: 'Run a one-line script'
 
 - script: |
-    echo Add other tasks to build, test, and deploy your project.
-    echo See https://aka.ms/yaml
+    c:\LDRA_Toolsuite_C_CPP_10.0.3\contestbed
   displayName: 'Run a multi-line script'
