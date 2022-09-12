@@ -21,4 +21,4 @@ steps:
 
 - task: PublishHtmlReport@1
   inputs:
-    reportDir: '%CD%\TestResults'
+    reportDir: 'TestResults'
