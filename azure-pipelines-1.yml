@@ -15,5 +15,10 @@ steps:
 - script: |
     echo %CD%
     c:\LDRA_Toolsuite_C_CPP_10.0.3\contestbed blocksort.c /11234q
-    echo blah > ..\TestResults\something.txt
+    c:\LDRA_Toolsuite_C_CPP_10.0.3\tbreports C:\LDRA_Workarea_C_CPP_10.0.3\Tbwrkfls\blocksort_1.ldra -tbpublish -tbpublish_dir=%CD%\TestResults
+
   displayName: 'Run a multi-line script'
+
+- task: PublishHtmlReport@1
+  inputs:
+    reportDir: '%CD%\TestResults'
